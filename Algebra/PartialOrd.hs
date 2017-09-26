@@ -103,6 +103,7 @@ instance PartialOrd () where
     leq _ _ = True
 
 instance PartialOrd Void where
+    leq _ _ = True
 
 instance Ord a => PartialOrd (S.Set a) where
     leq = S.isSubsetOf
